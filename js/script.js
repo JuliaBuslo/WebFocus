@@ -122,7 +122,7 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   for (let index = 0; index < dropdown.length; index++) {
     const dropdownItem = dropdown[index];
     dropdownItem.addEventListener('click', function (e) {
-      dropdownItem.parentElement.classList.toggle('active');
+      dropdownItem.classList.toggle('active');
       e.preventDefault();
     });
   }
